@@ -2,12 +2,17 @@
 
 Bank Negara Malaysia (BNM) Open API MCP. Keyless.
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 673+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1394+ live data sources.
 
 ## Tools
 
 | Tool | Description |
 |------|-------------|
+| `bnm_exchange_rates` | Foreign exchange rates against the Malaysian Ringgit (MYR) from Bank Negara Malaysia. Latest rates for all currencies (default), one currency, or one currency on a specific historical date. Rates are published per session (snapshot time) and quote basis. Returns buying/selling/middle rates per currency unit. |
+| `bnm_gold_kijang_emas` | Kijang Emas — Malaysia's official gold bullion coin — buying and selling prices (in MYR) by coin size (one_oz, half_oz, quarter_oz). Latest prices by default, or every effective date within a given year+month. |
+| `bnm_policy_rate_opr` | Overnight Policy Rate (OPR) — Bank Negara Malaysia's benchmark monetary policy interest rate. Latest OPR decision by default, or every decision in a given year (with change_in_opr and new_opr_level). |
+| `bnm_base_rate` | Fetch the latest Base Rate (BR), Base Lending Rate (BLR), and indicative effective lending rate for every Malaysian financial institution, as published to Bank Negara Malaysia. Returns an array of bank entries with their current rate levels. No parameters required.Malaysian financial institutions to Bank Negara Malaysia. Returns the latest values for every bank. |
+| `bnm_endpoint` | Call any other confirmed Bank Negara Malaysia public endpoint by path and get its raw `data`. Confirmed live paths: "interest-rate" (interbank/money-market deposit rates by tenor), "interest-volume" (transaction volumes by tenor), "islamic-interbank-rate", "kl-usd-reference-rate" (KL USD/MYR reference rate), "usd-interbank-intraday-rate" (intraday hi/lo). Also accepts the documented sub-path forms (e.g. "exchange-rate/USD", "opr/year/2025") if you need a path not covered by a dedicated tool. |
 
 ## Quick Start
 
@@ -23,7 +28,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 673+ data sources:
+Or connect to the full Pipeworx gateway for access to all 1394+ data sources:
 
 ```json
 {
@@ -47,7 +52,7 @@ The gateway picks the right tool and fills the arguments automatically.
 
 ## More
 
-- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [Docs and guides](https://pipeworx.io/docs)
 - [pipeworx.io](https://pipeworx.io)
 
 ## License
