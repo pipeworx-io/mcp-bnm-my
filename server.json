@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/bnm-my",
   "title": "Bnm My",
   "description": "Bank Negara Malaysia (BNM) Open API MCP. Keyless.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "websiteUrl": "https://pipeworx.io/packs/bnm-my",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-bnm-my",
