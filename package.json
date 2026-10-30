@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-bnm-my",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Bank Negara Malaysia (BNM) Open API MCP. Keyless.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "bnm-my",
     "gatewaySlug": "bnm-my",
-    "sourceHash": "v1-af50fcea1a201ae597a07a8e384e4ef785a93edcdde6472b31a56adb90784ace",
-    "sourceCommit": "4277282d72f9bf55e548b3799aaf737baf22152f"
+    "sourceHash": "v1-ffc886f80e71dc4d2997410f34a39b154bb6064c2a3eb3be65eaec198c3bbcfe",
+    "sourceCommit": "5cb09714e895571153f3d9663c36ff0f140cadd6"
   }
 }
